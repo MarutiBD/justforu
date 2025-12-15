@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>An Honest Note</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    .wrapper {
+        width: 100%;
+        max-width: 440px;
+        padding: 16px;
+    }
+
+    .lang-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    .lang-buttons button {
+        border: none;
+        padding: 8px 18px;
+        border-radius: 20px;
+        font-size: 14px;
+        cursor: pointer;
+        background: #f1f5f9;
+        color: #333;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .lang-buttons button.active {
+        background: #6c8ebf;
+        color: #fff;
+    }
+
+    .card {
+        background: #ffffff;
+        padding: 28px;
+        border-radius: 14px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        animation: fadeUp 0.9s ease;
+    }
+
+    h2 {
+        margin-top: 0;
+        color: #2c3e50;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 15.5px;
+        line-height: 1.7;
+        color: #444;
+        margin-top: 14px;
+    }
+
+    .divider {
+        height: 1px;
+        background: #e0e0e0;
+        margin: 18px 0;
+    }
+
+    .footer {
+        margin-top: 18px;
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+    }
+
+    .content {
+        display: none;
+        animation: fadeContent 0.6s ease;
+    }
+
+    .content.active {
+        display: block;
+    }
+
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(16px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeContent {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+    <!-- Language Toggle -->
+    <div class="lang-buttons">
+        <button id="btn-en" class="active" onclick="showLang('en')">English</button>
+        <button id="btn-kn" onclick="showLang('kn')">ಕನ್ನಡ</button>
+    </div>
+
+    <div class="card">
+
+        <!-- ENGLISH -->
+        <div id="en" class="content active">
+            <h2>Hii Roja</h2>
+
+            <p>
+                I am writing this with respect and sincerity.
+            </p>
+
+            <p>
+                About seven months ago, I noticed you at the office. From the very first moment,
+                I felt admiration. I am an introvert, and even simple conversations take a lot of
+                courage for me.
+            </p>
+
+            <p>
+                Many times I wanted to speak to you or explain myself, but fear, hesitation,
+                and overthinking always stopped me. It was never due to a lack of respect —
+                it was only my nature.
+            </p>
+
+            <p>
+                I wanted to explain all this much earlier. I tried several times to prepare myself,
+                but I was scared of being misunderstood or causing discomfort, so I stayed silent.
+            </p>
+
+            <p>
+                Later, I came to know that someone created fake social media accounts and shared
+                wrong things about me. I want to clearly say this —
+                <strong>I never did that, nor did I encourage it.</strong>
+            </p>
+
+            <p>
+                When I once messaged asking whether you reached safely, it was only out of concern.
+                If that message made you uncomfortable in any way, I am genuinely sorry.
+                If you feel comfortable and forgive me, I humbly request you to unblock me.
+              </p>
+              <p>  If not
+            </p>
+
+            <div class="divider"></div>
+
+            <p>
+                I completely respect whatever decision you choose to make.
+                There will be no complaints or expectations from my side.
+            </p>
+
+            <p>
+                I may move forward in life, but the respect and feelings I had
+                will always remain a part of me.
+                I wanted to be honest about this, without asking anything in return.
+            </p>
+
+            <div class="footer">
+                Thank you for reading 🤍
+            </div>
+        </div>
+
+        <!-- KANNADA -->
+        <div id="kn" class="content">
+            <h2>Hii Roja</h2>
+
+            <p>
+                ಈ ಸಂದೇಶವನ್ನು ನಾನು ಸಂಪೂರ್ಣ ಗೌರವ ಮತ್ತು ಪ್ರಾಮಾಣಿಕತೆಯಿಂದ ಬರೆಯುತ್ತಿದ್ದೇನೆ.
+            </p>
+
+            <p>
+                ಸುಮಾರು ಏಳು ತಿಂಗಳುಗಳ ಹಿಂದೆ, office ನಲ್ಲಿ ನಿಮ್ಮನ್ನು ಮೊದಲ ಬಾರಿ ನೋಡಿದೆ.
+                ಆ ಕ್ಷಣದಿಂದಲೇ ನನಗೆ ಮೆಚ್ಚುಗೆ ಮತ್ತು ಗೌರವ ಹುಟ್ಟಿತು.
+                ನಾನು ಸ್ವಭಾವತಃ ಒಳಗೊಳಗೇ ಇರುವವನು.
+            </p>
+
+            <p>
+                ಸರಳವಾಗಿ ಮಾತನಾಡುವುದಕ್ಕೂ ನನಗೆ ಬಹಳ ಧೈರ್ಯ ಬೇಕಾಗುತ್ತದೆ.
+                ಅನೇಕ ಬಾರಿ ನಿಮ್ಮೊಂದಿಗೆ ಮಾತನಾಡಬೇಕು ಎಂದುಕೊಂಡಿದ್ದೆ,
+                ಆದರೆ ಭಯ ಮತ್ತು ಅತಿಯಾದ ಯೋಚನೆ ನನ್ನನ್ನು ತಡೆಯುತ್ತಿತ್ತು.
+                ಇದು ಅವಮಾನವಲ್ಲ — ಅದು ನನ್ನ ಸ್ವಭಾವ ಮಾತ್ರ.
+            </p>
+
+            <p>
+                ಈ ವಿಷಯವನ್ನು ನಾನು ಮುಂಚೆಯೇ ತಿಳಿಸಬೇಕು ಎಂದು ಅನೇಕ ಬಾರಿ ಯೋಚಿಸಿದ್ದೆ.
+                ತಯಾರಾದರೂ, ತಪ್ಪಾಗಿ ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲಾಗುತ್ತೇನೆ
+                ಅಥವಾ ನಿಮಗೆ ಅಸಹಜವಾಗುತ್ತದೆ ಎಂಬ ಭಯ ನನ್ನನ್ನು ತಡೆಹಿಡಿಯುತ್ತಿತ್ತು.
+            </p>
+
+            <p>
+                ನಂತರ, ಯಾರೋ ನಕಲಿ ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ಖಾತೆಗಳನ್ನು ಸೃಷ್ಟಿಸಿ
+                ನನ್ನ ಬಗ್ಗೆ ತಪ್ಪು ಮಾಹಿತಿಯನ್ನು ಹಂಚಿಕೊಂಡಿದ್ದಾರೆ ಎಂಬುದು ನನಗೆ ತಿಳಿಯಿತು.
+                <strong>ನಾನು ಅದನ್ನು ಎಂದಿಗೂ ಮಾಡಿಲ್ಲ.</strong>
+            </p>
+
+            <p>
+                ನೀವು ಪಾರ್ಟಿಯಿಂದ ಸುರಕ್ಷಿತವಾಗಿ ತಲುಪಿದ್ದೀರಾ ಎಂದು ನಾನು ಕೇಳಿದ್ದು
+                ಕೇವಲ ಕಾಳಜಿಯಿಂದ.
+                ಅದು ನಿಮಗೆ ಅಸಹಜವಾಗಿದ್ದರೆ,
+                ನಾನು ಹೃದಯಪೂರ್ವಕವಾಗಿ ಕ್ಷಮೆ ಕೇಳುತ್ತೇನೆ.
+                ನೀವು ಮನಸ್ಸಿನಿಂದ ಕ್ಷಮಿಸಿದರೆ, ದಯವಿಟ್ಟು ನನ್ನನ್ನು ಅನ್ಬ್ಲಾಕ್ ಮಾಡುವಂತೆ ವಿನಂತಿ.
+                ಇಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ನಿರ್ಧಾರವನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ಗೌರವಿಸುತ್ತೇನೆ.
+            </p>
+
+            <div class="divider"></div>
+
+            <p>
+                ನೀವು ಯಾವ ನಿರ್ಧಾರ ತೆಗೆದುಕೊಂಡರೂ,
+                ಅದನ್ನು ನಾನು ಸಂಪೂರ್ಣವಾಗಿ ಗೌರವಿಸುತ್ತೇನೆ.
+                ನನ್ನಿಂದ ಯಾವುದೇ ಒತ್ತಡ ಅಥವಾ ನಿರೀಕ್ಷೆ ಇರುವುದಿಲ್ಲ.
+            </p>
+
+            <p>
+                ಜೀವನ ಮುಂದುವರಿಯುತ್ತದೆ,
+                ಆದರೆ ನನ್ನ ಮನಸ್ಸಿನಲ್ಲಿ ಇದ್ದ ಗೌರವ ಮತ್ತು ಭಾವನೆಗಳು
+                ನನ್ನೊಂದಿಗೆ ಉಳಿಯುತ್ತವೆ.
+                ಯಾವುದೇ ಪ್ರತಿಫಲವನ್ನು ಕೇಳದೆ,
+                ಪ್ರಾಮಾಣಿಕವಾಗಿ ಇದನ್ನು ಹೇಳಲು ಮಾತ್ರ ಇಚ್ಛಿಸಿದೆ.
+            </p>
+
+            <div class="footer">
+                ಓದಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು 🤍
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+function showLang(lang) {
+    document.getElementById('en').classList.remove('active');
+    document.getElementById('kn').classList.remove('active');
+    document.getElementById('btn-en').classList.remove('active');
+    document.getElementById('btn-kn').classList.remove('active');
+
+    document.getElementById(lang).classList.add('active');
+    document.getElementById('btn-' + lang).classList.add('active');
+}
+</script>
+
+</body>
+</html>
